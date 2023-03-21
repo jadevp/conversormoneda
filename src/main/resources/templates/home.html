@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<section class="proyectos" id="proyectos">
+    <article>
+        <h1 class="titulo-de-proyectos">Welcome Select A Converter</h1>
+    </article>
+    
+
+    <div class="container">
+
+
+    <div class="card">
+        <a th:href="@{/convert(converter='currency')}">
+          <img src="/img/CDD2.png" alt="Ejemplo">
+          <div class="overlay">
+            <p>Conversor Divisas</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="card">
+       <a th:href="@{/convert(converter='length')}">
+          <img src="/img/CDL2.png" alt="Ejemplo"> 
+          <div class="overlay">
+            <p>Conversor Unidades De Longitud</p>
+          </div>
+        </a>
+      </div>
+  
+    </div>
+
+</section>
+
+    <style>
+        html {
+        height: 100%;
+    }
+    body {
+        margin:0;
+        padding:0;
+        font-family: sans-serif;
+        background-image: url(/img/bgh2.svg);
+    }
+
+.proyectos {
+    font-size: 10vmin;
+  line-height: 1.1;
+}
+article {
+  background: linear-gradient(
+    to right, 
+    hsl(98 100% 62%), 
+    hsl(204 100% 59%)
+  );
+
+  -webkit-background-clip: text;
+  
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+
+
+
+
+.titulo-de-proyectos {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+
+
+.titulo-de-proyecto {
+  margin-bottom: var(--bottom-margin);
+}
+
+.container{
+    display: flex;
+
+justify-content: center;
+align-items: center;
+height: 50vh;
+}
+.card {
+  
+
+ position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+  
+
+            </style>
+
+            
+</body>
+</html>
