@@ -32,7 +32,8 @@ A continuación, se presentan algunas imágenes de la aplicación:
 
 **Conversor de divisas**
 
-![CDD2](https://user-images.githubusercontent.com/111543414/227097810-d06d7e4a-cb96-4835-a994-ec4e106db431.png)
+![image](https://user-images.githubusercontent.com/111543414/227098743-3ca56ae0-0ccc-4664-a108-63346ca4447b.png)
+
 
 
 **Conversor de unidades de longitud**
